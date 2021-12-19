@@ -1,0 +1,18 @@
+name: Shell Commands # wrokflow name
+
+on : [push] # event name
+
+jobs: # start job
+  run-shell-command: 
+    
+    runs-on : ubuntu-latest # VM runner
+    
+    steps: # actions
+      
+      - name : echo a string
+        run : echo "Hello , World"
+      
+      - name : multiline script
+        run : |
+         node -v
+         npm -v
