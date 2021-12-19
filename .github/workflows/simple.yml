@@ -16,3 +16,4 @@ jobs: # start job
         run : |
          node -v
          npm -v
+         pwd
