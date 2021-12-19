@@ -3,7 +3,7 @@ name: Shell Commands # wrokflow name
 on : [push] # event name
 
 jobs: # start job
-  run-shell-command: 
+  run-shell-command: # job name
     
     runs-on : ubuntu-latest # VM runner
     
