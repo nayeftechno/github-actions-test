@@ -19,5 +19,5 @@ jobs: # start job
          pwd
       - name: python command
         run : |
-         print('Hello , World')
+         print("Hello , World")
          shell : python
