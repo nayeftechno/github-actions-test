@@ -17,7 +17,6 @@ jobs: # start job
          node -v
          npm -v
          pwd
-      - name: python command
+      - name: node command
         run : |
-         print("Hello , World")
-         shell : python
+         console.log('Hello , World')
