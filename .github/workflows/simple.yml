@@ -17,3 +17,9 @@ jobs: # start job
          node -v
          npm -v
          pwd
+      - name: python command
+        run : |
+         import platform
+         print
+         (platform.proccessor())
+         shell : python
