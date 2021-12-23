@@ -20,6 +20,5 @@ jobs: # start job
       - name: python command
         run : |
          import platform
-         print
-         (platform.proccessor())
+         print('Hello , World')
          shell : python
