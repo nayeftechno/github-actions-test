@@ -17,6 +17,3 @@ jobs: # start job
          node -v
          npm -v
          pwd
-      - name: node command
-        run : |
-         console.log('Hello , World')
