@@ -21,7 +21,7 @@ jobs: # start job
 
   run-window-command: # job name
     runs-on : windows-latest # VM runner
-    needs : [run-shell-command] # run in series (one after another)
+    needs : ["run-shell-command"] # run in series (one after another)
     steps: # actions
       - name : directory powershell
         run : Get-Location
