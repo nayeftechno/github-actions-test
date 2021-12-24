@@ -17,3 +17,20 @@ jobs: # start job
          node -v
          npm -v
          pwd
+
+
+
+  run-love-command: # job name
+    
+   runs-on : ubuntu-latest # VM runner
+    
+   steps: # actions
+      
+      - name : echo a string
+        run : echo "Hello , World"
+      
+      - name : multiline script
+        run : |
+         node -v
+         npm -v
+         pwd
