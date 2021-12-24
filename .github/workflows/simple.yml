@@ -20,17 +20,15 @@ jobs: # start job
 
 
 
-  run-love-command: # job name
+  run-window-command: # job name
     
-   runs-on : ubuntu-latest # VM runner
+   runs-on : windows-latest # VM runner
     
    steps: # actions
       
-      - name : echo a string
-        run : echo "Hello , World"
+      - name : directory powershell
+        run : Get-Location
       
-      - name : multiline script
-        run : |
-         node -v
-         npm -v
-         pwd
+      - name : directory bash
+        run : pwd
+        shell: bash
