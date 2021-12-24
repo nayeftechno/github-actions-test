@@ -1,4 +1,4 @@
-name: Shell Commands # wrokflow name
+name: Shell Commands Workflow # wrokflow name
 
 on : [push] # event name
 
