@@ -3,32 +3,28 @@ name: Shell Commands # wrokflow name
 on : [push] # event name
 
 jobs: # start job
+  
   run-shell-command: # job name
-    
     runs-on : ubuntu-latest # VM runner
-    
     steps: # actions
-      
       - name : echo a string
         run : echo "Hello , World"
-      
       - name : multiline script
         run : |
          node -v
          npm -v
          pwd
-
-
+      - name: python command
+        run : | 
+          import platform
+          print(platform.processor())
+        shell : python     
 
   run-window-command: # job name
-    
-   runs-on : windows-latest # VM runner
-    
-   steps: # actions
-      
+    runs-on : windows-latest # VM runner
+    steps: # actions
       - name : directory powershell
         run : Get-Location
-      
       - name : directory bash
         run : pwd
         shell: bash
